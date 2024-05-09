@@ -1,0 +1,255 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+#data-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#filter-box {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#filter-box h2 {
+    color: #206cbc;
+    margin-top: 0;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+#filter-form {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+}
+
+.search-flights:hover {
+    background-color: #105ca9;
+}
+
+.form-column {
+    flex: 1 1 1 30%;
+    margin-right: 10px;
+}
+
+.first-column,
+.second-column,
+.third-column,
+.fourth-column {
+    padding-right: 10px; 
+}
+
+.first-column:first-child,
+.second-column:last-child,
+.third-column:last-child,
+.fourth-column:last-child {
+    margin: 0;
+}
+
+.form-action {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.search-flights {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #206cbc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.search-flights:last-child {
+    margin-right: 0;
+}
+
+.form-column label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#nb-connections-slider {
+    width: 100%; 
+    position: relative; 
+}
+
+#nb-connections-slider::before,
+#nb-connections-slider::after {
+    content: attr(data-before); 
+    position: absolute;
+    top: 25px; 
+    color: #000; 
+    font-size: 14px; 
+}
+
+.form-column select {
+    display: block;
+    width: 70%;
+}
+
+.form-column input[type="date"] {
+    width: 30%;  
+}
+
+#search-date, #departure-date {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.checkbox-group label {
+    margin: 5px 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px; 
+}
+
+.noUi-pips .noUi-value {
+    font-size: 12px;
+    color: #333;
+}
+
+.noUi-pips .noUi-marker.noUi-marker-horizontal.noUi-marker-large {
+    background: #CCC;
+    height: 10px;
+    width: 2px;
+    top: -5px;
+}
+
+.noUi-target .noUi-connect {
+    background-color: #206cbc; 
+}
+
+.noUi-target .noUi-handle {
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.noUi-target .noUi-handle:hover {
+    background-color: #f4f4f4;
+}
+
+.noUi-target .noUi-handle:focus {
+    box-shadow: 0 0 1px #333 inset;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #206cbc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #206cbc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+}
+
+.button-small {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #206cbc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover, .button-small:hover {
+    background-color: #105ca9;
+}
+
+.container-center {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.space-between {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

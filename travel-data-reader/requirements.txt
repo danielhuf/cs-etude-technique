@@ -1,0 +1,4 @@
+git+https://github.com/alexprengere/neobase.git
+pytest
+confluent-kafka
+psycopg2-binary
